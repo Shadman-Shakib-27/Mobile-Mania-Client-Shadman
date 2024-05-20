@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "../../../assets/client/Mobile-Mania.png";
+import logo from "../../../assets/images/Mobile-Mania.png";
 import Link from "next/link";
 import { useAppSelector } from "@/redux/hook";
 
@@ -12,7 +12,7 @@ const Navbar = () => {
       <Link href="/">Home</Link>
     </li>,
     <li key="item2">
-      <Link href="/category">Categories</Link>
+      <Link href="/category">Top Brands</Link>
     </li>,
     <li key="item3">
       <Link href="/products">Products</Link>

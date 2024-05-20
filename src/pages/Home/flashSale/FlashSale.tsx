@@ -15,7 +15,7 @@ const FlashSale = ({ flashSales }: { flashSales: TProducts[] }) => {
         Hurray!!! Flash Sale is going on, grab your exciting offer during this sale time.Never miss this exciting offer.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-6">
         {flashSales?.slice(4, 8)?.map((sale: TProducts) => (
           <ProductCard key={sale?._id} product={sale} />
         ))}

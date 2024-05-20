@@ -25,7 +25,7 @@ const Filter = () => {
   };
 
   return (
-    <div className="w-full border border-[#21A0F3] hover:shadow-xl transition-all ease-in-out rounded-md p-3 space-y-10 sticky md:transform md:transition-none">
+    <div className="w-full border border-[#21A0F3] bg-base-200 hover:shadow-xl transition-all ease-in-out rounded-md p-3 space-y-10 sticky md:transform md:transition-none">
       <div className="space-y-2">
         <h5 className="text-lg font-medium text-slate-700">
           Top <span className="text-[#21A0F3]">Brands</span>

@@ -27,24 +27,23 @@ const ProductCard = ({ product }: { product: TProducts }) => {
         <figure>
           <Image
             src={product?.image}
-            width={400}
+            width={300}
             height={200}
-            alt="Shoes"
+            alt="Phones"
             className="h-52 rounded-t-xl"
           />
           {product?.discount && (
-            <div className="p-4 badge badge-neutral absolute top-3 right-3">
-              -{product?.discount}%
+            <div className="p-4 badge badge-neutral bg-[#22A1F0] absolute top-3 right-3">
+              <h6 className="font-semibold text-black">-{product?.discount}%</h6>
             </div>
           )}
         </figure>
         <div className="card-body pb-4 space-y-[2px]">
           <h2 className="card-title">{product?.title}</h2>
-          {/* <p className="text-lg">{product?.description}</p> */}
           <div>
             <p className="text-lg">
               Price: ${product?.new_price}
-              <sup className="text-main">
+              <sup className="text-[#22A1F0]">
                 {" "}
                 $<del> {product?.previous_price}</del>
               </sup>

@@ -9,7 +9,9 @@ const page = async (props: {
   const search = props.searchParams;
 
   const queryUrl = new URLSearchParams(search).toString();
-  const res = await fetch(`https://mobile-mania-server-shadman.vercel.app/api/v1/products?${queryUrl}`);
+  const res = await fetch(
+    `https://mobile-mania-server-shadman.vercel.app/api/v1/products?${queryUrl}`
+  );
   const products = await res.json();
 
   return (
@@ -17,7 +19,7 @@ const page = async (props: {
       <div className="h-screen flex-[1] space-y-8 sticky top-60 p-2 left-0">
         <Filter />
       </div>
-      <div className="flex-[5]">
+      <div className="flex-[6]">
         <div className="my-8">
           <h1 className="text-3xl font-semibold my-5 text-center">
             Collection Of Mobile<span className="text-[#22A1F0]"> Mania</span>
@@ -29,7 +31,7 @@ const page = async (props: {
             of mobile innovation with us.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:mr-0 mr-4">
           {products?.map((product: TProducts) => (
             <ProductCard key={product?._id} product={product} />
           ))}

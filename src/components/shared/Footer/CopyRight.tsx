@@ -4,7 +4,7 @@ const CopyRight = () => {
       <aside>
         <p>
           Copyright © {new Date().getFullYear()} - All Right Reserved By
-          <span className="text-[#22A1F0] font-semibold"> Mobile Mania</span>
+          <span className="text-[#22A1F0] font-semibold"> Shadman Shakib</span>
         </p>
       </aside>
     </footer>

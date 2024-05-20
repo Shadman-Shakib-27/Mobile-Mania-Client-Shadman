@@ -15,7 +15,7 @@ const page = async () => {
   return (
     <div className="max-w-[1230px] mx-auto my-12 ">
       <div className="my-8">
-        <h1 className="text-3xl font-semibold my-5 text-center">
+        <h1 className="lg:text-3xl text-2xl font-semibold my-5 text-center">
           Total Collection Of Mobile
           <span className="text-[#22A1F0]"> Mania</span>
         </h1>

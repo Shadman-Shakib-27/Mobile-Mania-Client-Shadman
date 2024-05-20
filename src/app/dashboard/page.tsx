@@ -1,7 +1,7 @@
 import { TProducts } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../assets/client/Mobile-Mania.png";
+import logo from "../../assets/images/Mobile-Mania.png";
 
 const AllProduct = async () => {
   const res = await fetch(

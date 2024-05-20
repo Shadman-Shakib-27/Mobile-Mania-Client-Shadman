@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CopyRight from "./CopyRight";
 import Image from "next/image";
-import logo from "../../../assets/client/Mobile-Mania.png";
+import logo from "../../../assets/images/Mobile-Mania.png";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareInstagram, FaXTwitter } from "react-icons/fa6";
 

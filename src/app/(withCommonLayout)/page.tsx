@@ -8,9 +8,9 @@ const page = async () => {
     "https://mobile-mania-server-shadman.vercel.app/api/v1/products",
     {
       cache: "no-store",
-      next: {
-        revalidate: 30,
-      },
+      // next: {
+      //   revalidate: 30,
+      // },
     }
   );
   const products = await res.json();
