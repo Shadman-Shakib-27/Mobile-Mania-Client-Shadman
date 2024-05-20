@@ -4,7 +4,10 @@ import Link from "next/link";
 import logo from "../../assets/client/Mobile-Mania.png";
 
 const AllProduct = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products", {});
+  const res = await fetch(
+    "https://mobile-mania-server-shadman.vercel.app/api/v1/products",
+    {}
+  );
   const products = await res.json();
   return (
     <div className="bg-base-200 min-h-screen">

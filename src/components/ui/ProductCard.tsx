@@ -22,53 +22,53 @@ const ProductCard = ({ product }: { product: TProducts }) => {
   };
 
   return (
-    <div className="card bg-base-100 shadow-xl relative">
+    <div className="card hover:scale-105 transition-all duration-300 bg-base-100 shadow-xl relative">
       <Link href={`/products/${product?._id}`}>
-      <figure>
-        <Image
-          src={product?.image}
-          width={400}
-          height={200}
-          alt="Shoes"
-          className="h-52 rounded-t-xl"
-        />
-        {product?.discount && (
-          <div className="p-4 badge badge-neutral absolute top-3 right-3">
-            -{product?.discount}%
-          </div>
-        )}
-      </figure>
-      <div className="card-body pb-4 space-y-[2px]">
-        <h2 className="card-title">{product?.title}</h2>
-        {/* <p className="text-lg">{product?.description}</p> */}
-        <div>
-          <p className="text-lg">
-            Price: ${product?.new_price}
-            <sup className="text-main">
-              {" "}
-              $<del> {product?.previous_price}</del>
-            </sup>
-          </p>
-        </div>
-        <div className="flex items-center gap-1">
-          <Rating
-            style={{ maxWidth: 140 }}
-            itemStyles={myStyles}
-            value={product?.rating}
-            readOnly
+        <figure>
+          <Image
+            src={product?.image}
+            width={400}
+            height={200}
+            alt="Shoes"
+            className="h-52 rounded-t-xl"
           />
-          <span>({randomNumber})</span>
+          {product?.discount && (
+            <div className="p-4 badge badge-neutral absolute top-3 right-3">
+              -{product?.discount}%
+            </div>
+          )}
+        </figure>
+        <div className="card-body pb-4 space-y-[2px]">
+          <h2 className="card-title">{product?.title}</h2>
+          {/* <p className="text-lg">{product?.description}</p> */}
+          <div>
+            <p className="text-lg">
+              Price: ${product?.new_price}
+              <sup className="text-main">
+                {" "}
+                $<del> {product?.previous_price}</del>
+              </sup>
+            </p>
+          </div>
+          <div className="flex items-center gap-1">
+            <Rating
+              style={{ maxWidth: 140 }}
+              itemStyles={myStyles}
+              value={product?.rating}
+              readOnly
+            />
+            <span>({randomNumber})</span>
+          </div>
+          <button
+            onClick={() => {
+              handleAddToCard(product);
+            }}
+            className="px-4 bg-[#22A1F0] hover:bg-black text-white  py-[6px] bg-main border hover:bg-pure hover:text-main hover:border-main transition-all duration-500 delay-100 rounded"
+          >
+            Add To Cart
+          </button>
+          {/* <TiShoppingCart className="size-6" /> */}
         </div>
-        <button
-          onClick={() => {
-            handleAddToCard(product);
-          }}
-          className="px-4 bg-[#22A1F0] hover:bg-black text-white  py-[6px] bg-main border hover:bg-pure hover:text-main hover:border-main transition-all duration-500 delay-100 rounded"
-        >
-          Add To Cart
-        </button>
-        {/* <TiShoppingCart className="size-6" /> */}
-      </div>
       </Link>
     </div>
   );

@@ -3,7 +3,14 @@ import ProductCard from "@/components/ui/ProductCard";
 import { TProducts } from "@/types";
 
 const page = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products");
+  const res = await fetch(
+    "https://mobile-mania-server-shadman.vercel.app/api/v1/products",
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const products = await res.json();
 
   return (
@@ -19,10 +26,10 @@ const page = async () => {
           </h1>
 
           <p className="text-lg text-gray-400 w-2/3">
-          Welcome to <span className="font-semibold">Mobile Mania</span>, your
-          premier destination for all things mobile. Dive into a world where
-          cutting-edge technology meets exceptional service.Discover the joy of
-          mobile innovation with us.
+            Welcome to <span className="font-semibold">Mobile Mania</span>, your
+            premier destination for all things mobile. Dive into a world where
+            cutting-edge technology meets exceptional service.Discover the joy
+            of mobile innovation with us.
           </p>
         </div>
         <CountDownPage />

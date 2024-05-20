@@ -9,7 +9,7 @@ const page = async (props: {
   const search = props.searchParams;
 
   const queryUrl = new URLSearchParams(search).toString();
-  const res = await fetch(`http://localhost:5000/api/v1/products?${queryUrl}`);
+  const res = await fetch(`https://mobile-mania-server-shadman.vercel.app/api/v1/products?${queryUrl}`);
   const products = await res.json();
 
   return (

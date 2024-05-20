@@ -2,9 +2,12 @@ import ProductCard from "@/components/ui/ProductCard";
 import { TProducts } from "@/types";
 
 const page = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    "https://mobile-mania-server-shadman.vercel.app/api/v1/products",
+    {
+      cache: "no-store",
+    }
+  );
   const products = await res.json();
   const sortedProducts = products.sort(
     (a: { rating: number }, b: { rating: number }) => b.rating - a.rating

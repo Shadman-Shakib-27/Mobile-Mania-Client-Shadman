@@ -6,9 +6,12 @@ const page = async ({
 }: {
   params: { category: string };
 }) => {
-  const res = await fetch("http://localhost:5000/api/v1/products", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    "https://mobile-mania-server-shadman.vercel.app/api/v1/products",
+    {
+      cache: "no-store",
+    }
+  );
   let filteredProducts: TProducts[] = [];
   const products = await res.json();
 

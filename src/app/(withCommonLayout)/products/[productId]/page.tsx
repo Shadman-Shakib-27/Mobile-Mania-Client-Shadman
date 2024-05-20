@@ -12,8 +12,10 @@ interface TProducts {
 const page = async ({ params }: TProducts) => {
   // console.log(params);
   const res = await fetch(
-    `http://localhost:5000/api/v1/products/${params?.productId}`,
-    
+    `https://mobile-mania-server-shadman.vercel.app/api/v1/products/${params?.productId}`,
+    {
+      cache: "no-store",
+    }
   );
   const product = await res.json();
   // const handleAddToCard = (product) => {
@@ -70,10 +72,7 @@ const page = async ({ params }: TProducts) => {
               <span className="text-sm text-main"> Shipping & Return</span>
             </p>
           </div>
-          <button
-            onClick={() => {}}
-            className=" px-4 py-[6px] bg-main border text-[#fff] hover:bg-pure hover:text-main transition-all duration-300 delay-100 rounded"
-          >
+          <button className=" px-4 py-[6px] bg-main border text-[#fff] hover:bg-pure hover:text-main transition-all duration-300 delay-100 rounded">
             Add To Cart
           </button>
         </div>
