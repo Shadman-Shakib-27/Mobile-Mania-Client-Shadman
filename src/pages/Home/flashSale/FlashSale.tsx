@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const FlashSale = ({ flashSales }: { flashSales: TProducts[] }) => {
   return (
-    <div className="max-w-[1230px] mx-auto my-16 lg:mt-[173px] sm:mt-[60px] xs:mt-[60px]">
+    <div className="max-w-[1230px] mx-auto my-16 lg:mt-[173px] sm:mt-[168px] xs:mt-[168px]">
       <div className="flex items-center justify-between">
         <h1 className="text-3xl mx-auto font-semibold">
           Flash <span className="text-[#22A1F0]">Sale</span>
