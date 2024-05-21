@@ -27,8 +27,7 @@ const AllProduct = async () => {
               <button className="bg-[#21A0F3] transition-transform duration-300 hover:scale-110 hover:bg-black px-4 py-3 rounded-lg">
                 All Products
               </button>
-            </Link>
-            
+            </Link>   
           </div>
         </div>
       </header>

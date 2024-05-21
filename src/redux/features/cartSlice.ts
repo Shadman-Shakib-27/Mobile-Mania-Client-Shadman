@@ -19,6 +19,7 @@ const cartSlice = createSlice({
       if (!isExist) {
         //@ts-ignore
         state.products.push({ ...action.payload, quantity: 1 });
+        toast.info("This Item Added Into Your Cart!!");
       } else {
         toast.info("This Item Already Exist To Cart.");
       }
