@@ -26,7 +26,7 @@ const page = async () => {
           mobile innovation with us.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:p-4 xs:p-4">
         {sortedProducts?.map((product: TProducts) => (
           <ProductCard key={product?._id} product={product} />
         ))}

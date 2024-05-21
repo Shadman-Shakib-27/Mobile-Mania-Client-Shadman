@@ -30,7 +30,7 @@ const page = async () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:p-4 xs:p-4">
         {products?.map((product: TProducts) => (
           <ProductCard key={product._id} product={product} />
         ))}

@@ -28,8 +28,8 @@ const CountDownPage = () => {
   return (
     <div>
       <h5 className="text-black text-center font-semibold text-2xl my-2">Remaining Time:</h5>
-      <div className="bg-[#22A1F0] lg:w-[16%] w-[50%] mx-auto py-4 px-6 text-white rounded">
-        <span className="countdown font-mono text-2xl space-x-4">
+      <div className="bg-[#22A1F0] lg:w-[16%] xs:w-[50%] sm:w-[51%] mx-auto p-4 text-white rounded">
+        <span className="countdown font-mono text-center text-2xl space-x-4">
           <span style={{ "--value": hours } as React.CSSProperties}></span>h
           <span style={{ "--value": minutes } as React.CSSProperties}></span>m
           <span style={{ "--value": seconds } as React.CSSProperties}></span>s

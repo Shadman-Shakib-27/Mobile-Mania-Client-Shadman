@@ -22,7 +22,7 @@ const ProductCard = ({ product }: { product: TProducts }) => {
   };
 
   return (
-    <div className="card hover:scale-105 transition-all duration-300 bg-base-100 shadow-xl relative">
+    <div className="card px-4 py-4 border border-[#22A1F0] hover:scale-105 transition-all duration-300 bg-base-100 shadow-xl relative">
       <figure>
         <Image
           src={product?.image}

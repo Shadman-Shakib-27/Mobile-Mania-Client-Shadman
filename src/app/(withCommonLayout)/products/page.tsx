@@ -31,7 +31,7 @@ const page = async (props: {
             of mobile innovation with us.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:mr-0 mr-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 xs:p-4 sm:p-4">
           {products?.map((product: TProducts) => (
             <ProductCard key={product?._id} product={product} />
           ))}

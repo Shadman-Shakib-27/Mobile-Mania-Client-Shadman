@@ -12,7 +12,7 @@ const Category = async () => {
         <h1 className="text-3xl font-semibold my-5 text-center">
           Top <span className="text-[#22A1F0]"> Brands</span>
         </h1>
-        <p className="text-lg w-2/4 text-center mx-auto text-gray-400">
+        <p className="text-lg max-w-[50ch] text-center mx-auto text-gray-400">
           Welcome to <span className="font-semibold">Mobile Mania</span>, your
           premier destination for all things mobile. Dive into a world where
           cutting-edge technology meets exceptional service.Discover the joy of

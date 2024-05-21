@@ -55,31 +55,33 @@ const Page = async ({ params }: TProducts) => {
               <span className="font-semibold">Brand:</span> {product.category}
             </p>
           </div>
-          <p className="my-6 pr-6">{product.description}</p>
+          <p className="my-6 sm:text-justify xs:text-justify">
+            {product.description}
+          </p>
           <div>
-            <p className="flex gap-2">
+            <p className="flex items-center gap-1">
               <MdOutlineLocalShipping className="size-6" />
-              Delivery Charge Inside Dhaka:
+              Delivery Cost Inside Dhaka:
               <span className="text-lg font-semibold">
                 ${product.Delivery_cost_inside}
               </span>
             </p>
-            <p className="flex gap-2">
+            <p className="flex items-center gap-1">
               <MdOutlineLocalShipping className="size-6" />
-              Delivery Charge Outside Dhaka:
+              Delivery Cost Outside Dhaka:
               <span className="text-lg font-semibold">
                 ${product.Delivery_cost_outside}
               </span>
             </p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <MdDeliveryDining className="size-6" />
             <p>
               Delivery Within{" "}
               <span className="text-lg font-semibold">
                 {product.Deliver_days}
               </span>{" "}
-              Days, <span className="text-sm text-main">Shipping & Return</span>
+              Days
             </p>
           </div>
         </div>

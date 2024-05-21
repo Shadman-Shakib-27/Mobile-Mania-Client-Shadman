@@ -11,12 +11,12 @@ const FlashSale = ({ flashSales }: { flashSales: TProducts[] }) => {
           Flash <span className="text-[#22A1F0]">Sale</span>
         </h1>
       </div>
-      <p className="max-w-[50ch] text-center text-[18px] mx-auto my-4 text-gray-400">
+      <p className="max-w-[50ch] xs:px-2 sm:px-2 text-center text-[18px] mx-auto my-4 text-gray-400">
         Hurray!!! Flash Sale is going on, grab your exciting offer during this
         sale time.Never miss this exciting offer.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-6 sm:p-2 xs:p-2">
         {flashSales?.slice(4, 8)?.map((sale: TProducts) => (
           <ProductCard key={sale?._id} product={sale} />
         ))}
