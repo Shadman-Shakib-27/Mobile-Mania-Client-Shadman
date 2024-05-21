@@ -8,7 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      screens: {
+        xs: "350px",
+        sm: "390px",
+      },
     },
   },
   plugins: [require("daisyui")],

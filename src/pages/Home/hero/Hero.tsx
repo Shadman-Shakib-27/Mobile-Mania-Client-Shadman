@@ -23,7 +23,7 @@ const Hero = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3000,
+          delay: 5000,
           disableOnInteraction: true,
         }}
         keyboard={true}
@@ -32,7 +32,7 @@ const Hero = () => {
       >
         <SwiperSlide>
           <div
-            className="lg:h-[100vh] h-[70vh]"
+            className="lg:h-[100vh] xs:h-[83vh] sm:h-[60vh]"
             style={{
               backgroundImage: "url('https://i.ibb.co/hdbs48J/Carousel1.jpg')",
               backgroundSize: "cover",
@@ -68,7 +68,7 @@ const Hero = () => {
 
         <SwiperSlide>
           <div
-            className="lg:h-[100vh] h-[70vh]"
+            className="lg:h-[100vh] xs:h-[83vh] sm:h-[60vh]"
             style={{
               backgroundImage: "url('https://i.ibb.co/KjGtbMW/Carousel4.png')",
               backgroundSize: "cover",
@@ -104,7 +104,7 @@ const Hero = () => {
 
         <SwiperSlide>
           <div
-            className="lg:h-[100vh] h-[70vh]"
+            className="lg:h-[100vh] xs:h-[83vh] sm:h-[60vh]"
             style={{
               backgroundImage: "url('https://i.ibb.co/6B3WRWx/Carousel2.jpg')",
               backgroundSize: "cover",

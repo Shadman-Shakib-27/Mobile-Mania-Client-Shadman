@@ -1,32 +1,43 @@
 "use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../../../assets/images/Mobile-Mania.png";
 import Link from "next/link";
 import { useAppSelector } from "@/redux/hook";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const cartItem = useAppSelector((store) => store.cart.products);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
 
   const items = [
-    <li key="item1">
+    <li key="item1" onClick={closeDropdown}>
       <Link href="/">Home</Link>
     </li>,
-    <li key="item2">
+    <li key="item2" onClick={closeDropdown}>
       <Link href="/category">Top Brands</Link>
     </li>,
-    <li key="item3">
+    <li key="item3" onClick={closeDropdown}>
       <Link href="/products">Products</Link>
     </li>,
-    <li key="item4">
+    <li key="item4" onClick={closeDropdown}>
       <Link href="/flash-sale">Flash Sale</Link>
     </li>,
-    <li key="item5">
+    <li key="item5" onClick={closeDropdown}>
       <Link href="/">About Us</Link>
     </li>,
-    <li key="item6">
+    <li key="item6" onClick={closeDropdown}>
       <Link href="/">Contact Us</Link>
     </li>,
-    <li key="item7">
+    <li key="item7" onClick={closeDropdown}>
       <Link href="/cart">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -43,28 +54,54 @@ const Navbar = () => {
 
   return (
     <div className="shadow-md mb-16">
-      <div className="navbar  max-w-[1230px] mx-auto flex items-center justify-between lg:px-0">
+      <div className="navbar max-w-[1230px] mx-auto flex items-center justify-between lg:px-0">
         <div className="navbar-start flex items-center">
           <div className="dropdown lg:hidden">
-            <div tabIndex={0} role="button" className="btn btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-[#22A1F0]"
-                fill=""
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost"
+              onClick={toggleDropdown}
+            >
+              {isDropdownOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-[#22A1F0]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-[#22A1F0]"
+                  fill=""
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              )}
             </div>
-            <ul className="menu z-10 menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              {items}
-            </ul>
+            {isDropdownOpen && (
+              <ul
+                className={`${styles.menu} ${styles.menu_hidden} ${styles.menu_visible} menu z-10 menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52`}
+              >
+                {items}
+              </ul>
+            )}
           </div>
 
           <Link href="/">
@@ -84,7 +121,7 @@ const Navbar = () => {
 
         <div className="navbar-end flex items-center">
           <Link
-            className="btn px-6 btn-active border-main bg-[#22A1F0] hover:bg-black text-white  hover:shadow-md transition-all mr-3 hover:scale-105"
+            className="btn px-6 btn-active border-main bg-[#22A1F0] hover:bg-black text-white hover:shadow-md transition-all mr-3 hover:scale-105"
             href={"/dashboard"}
           >
             Dashboard
