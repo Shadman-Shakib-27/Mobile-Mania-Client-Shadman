@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <div className="shadow-md mb-16">
-      <div className="navbar max-w-[1230px] mx-auto flex items-center justify-between lg:px-0">
+      <div className="navbar  max-w-[1230px] mx-auto flex items-center justify-between lg:px-0">
         <div className="navbar-start flex items-center">
           <div className="dropdown lg:hidden">
             <div tabIndex={0} role="button" className="btn btn-ghost">

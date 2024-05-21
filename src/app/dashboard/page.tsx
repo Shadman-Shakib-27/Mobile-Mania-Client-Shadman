@@ -23,16 +23,12 @@ const AllProduct = async () => {
             />
           </Link>
           <div className="flex items-center space-x-4">
-            <Link href="/products" className="text-white text-lg font-semibold">
+            <Link href="/dashboard/all-products" className="text-white text-lg font-semibold">
               <button className="bg-[#21A0F3] transition-transform duration-300 hover:scale-110 hover:bg-black px-4 py-3 rounded-lg">
                 All Products
               </button>
             </Link>
-            {/* <input
-              type="text"
-              placeholder="Search products..."
-              className="px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300"
-            /> */}
+            
           </div>
         </div>
       </header>

@@ -9,6 +9,16 @@ interface TProducts {
   };
 }
 
+// For SSG in 10 Products
+export const generateStaticParams = async () => {
+  const res = await fetch(
+    `https://mobile-mania-server-shadman.vercel.app/api/v1/products`
+  );
+  const products = await res.json();
+  return products?.slice(0, 10).map((product: any) => ({
+    productId: product._id,
+  }));
+};
 const Page = async ({ params }: TProducts) => {
   const res = await fetch(
     `https://mobile-mania-server-shadman.vercel.app/api/v1/products/${params?.productId}`,

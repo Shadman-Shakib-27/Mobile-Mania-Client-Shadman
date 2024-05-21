@@ -27,7 +27,7 @@ const Hero = () => {
           disableOnInteraction: true,
         }}
         keyboard={true}
-        modules={[Autoplay, Navigation,Pagination, Mousewheel, Keyboard]}
+        modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -53,11 +53,12 @@ const Hero = () => {
                 something for everyone. Discover the joy of mobile innovation
                 with us.
               </p>
-              <div className="flex mb-4">
-                <button className="btn px-10 btn-active border-main bg-main hover:text-white hover:bg-transparent hover:shadow-md transition-all mr-3 hover:scale-105">
+              <div className="flex mx-auto">
+                <button className="btn px-5 lg:px-10 btn-active border-main bg-main hover:text-white hover:bg-transparent hover:shadow-md transition-all mr-3 hover:scale-105">
                   Get Started
                 </button>
-                <button className="btn px-10 btn-outline border-main hover:bg-main hover:text-white text-main hover:border-main  transition-all hover:scale-105">
+
+                <button className="btn px-5 lg:px-10 btn-outline border-main hover:bg-main hover:text-white text-main hover:border-main transition-all hover:scale-105">
                   Learn More
                 </button>
               </div>
@@ -88,11 +89,12 @@ const Hero = () => {
                 something for everyone. Discover the joy of mobile innovation
                 with us.
               </p>
-              <div className="flex mb-4">
-                <button className="btn px-10 btn-active border-main bg-main hover:text-white hover:bg-transparent hover:shadow-md transition-all mr-3 hover:scale-105">
+              <div className="flex mx-auto">
+                <button className="btn px-5 lg:px-10 btn-active border-main bg-main hover:text-white hover:bg-transparent hover:shadow-md transition-all mr-3 hover:scale-105">
                   Get Started
                 </button>
-                <button className="btn px-10 btn-outline border-main hover:bg-main hover:text-white text-main hover:border-main  transition-all hover:scale-105">
+
+                <button className="btn px-5 lg:px-10 btn-outline border-main hover:bg-main hover:text-white text-main hover:border-main transition-all hover:scale-105">
                   Learn More
                 </button>
               </div>
@@ -123,11 +125,12 @@ const Hero = () => {
                 something for everyone. Discover the joy of mobile innovation
                 with us.
               </p>
-              <div className="flex mb-4">
-                <button className="btn px-10 btn-active border-main bg-main hover:text-white hover:bg-transparent hover:shadow-md transition-all mr-3 hover:scale-105">
+              <div className="flex mx-auto">
+                <button className="btn px-5 lg:px-10 btn-active border-main bg-main hover:text-white hover:bg-transparent hover:shadow-md transition-all mr-3 hover:scale-105">
                   Get Started
                 </button>
-                <button className="btn px-10 btn-outline border-main hover:bg-main hover:text-white text-main hover:border-main  transition-all hover:scale-105">
+
+                <button className="btn px-5 lg:px-10 btn-outline border-main hover:bg-main hover:text-white text-main hover:border-main transition-all hover:scale-105">
                   Learn More
                 </button>
               </div>

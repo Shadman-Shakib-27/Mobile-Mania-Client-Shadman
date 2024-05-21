@@ -45,8 +45,8 @@ const Footer = () => {
           <h6 className="footer-title border-b-[2px] border-[#22A1F0]">
             Quick Links
           </h6>
-          <Link href="/products">Trending Products</Link>
-          <Link href="/">Categories</Link>
+          <Link href="/TrendingProducts">Trending Products</Link>
+          <Link href="/products">Brands</Link>
           <Link href="/">About Us</Link>
           <Link href="/">Contact Us</Link>
           <Link href="/">Customer Care</Link>
