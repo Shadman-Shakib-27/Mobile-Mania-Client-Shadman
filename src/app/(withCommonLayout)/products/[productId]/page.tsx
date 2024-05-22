@@ -52,7 +52,7 @@ const Page = async ({ params }: TProducts) => {
               <span className="font-semibold">Rating:</span> {product.rating}
             </p>
             <p>
-              <span className="font-semibold">Brand: </span>
+              <span className="font-semibold -ml-1">Brand: </span>
               <span className="xs:text-[16px] xs:font-semibold lg:text-xl sm:font-semibold sm:text-[16px]">
                 {product.category}
               </span>
