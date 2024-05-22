@@ -13,7 +13,7 @@ const page = async () => {
     (a: { rating: number }, b: { rating: number }) => b.rating - a.rating
   );
   return (
-    <div className="max-w-[1230px] mx-auto my-12 ">
+    <div className="max-w-[1230px] mx-auto my-12">
       <div className="my-8">
         <h1 className="lg:text-3xl text-2xl font-semibold my-5 text-center">
           Total Collection Of Mobile
@@ -26,7 +26,7 @@ const page = async () => {
           mobile innovation with us.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:px-2 xs:px-2">
         {sortedProducts?.map((product: TProducts) => (
           <ProductCard key={product?._id} product={product} />
         ))}

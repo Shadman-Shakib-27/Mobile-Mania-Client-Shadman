@@ -77,9 +77,9 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Username@site.com"
-                className="input w-52 input-bordered join-item"
+                className="input w-52 border border-[#22A1F0]"
               />
-              <button className="btn px-3 join-item border-second bg-[#22A1F0]   hover:bg-black text-white">
+              <button className="btn px-3 ml-2 bg-[#22A1F0] hover:bg-black text-white">
                 Subscribe
               </button>
             </div>

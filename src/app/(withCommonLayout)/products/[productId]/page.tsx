@@ -38,7 +38,7 @@ const Page = async ({ params }: TProducts) => {
           className="rounded-md shadow-md lg:p-0 p-4"
           alt="Product Image"
         />
-        <div className="p-4">
+        <div className="p-2">
           <h1 className="text-2xl font-semibold">{product.title}</h1>
           <div className="flex gap-6 text-2xl mt-3 items-center border-b-2 border-base-300 border-dashed pb-5">
             <p className="border-r-2 border-base-300 border-dashed pr-4">
@@ -52,7 +52,10 @@ const Page = async ({ params }: TProducts) => {
               <span className="font-semibold">Rating:</span> {product.rating}
             </p>
             <p>
-              <span className="font-semibold">Brand:</span> {product.category}
+              <span className="font-semibold">Brand: </span>
+              <span className="xs:text-[16px] xs:font-semibold lg:text-xl sm:font-semibold sm:text-[16px]">
+                {product.category}
+              </span>
             </p>
           </div>
           <p className="my-6 sm:text-justify xs:text-justify">
