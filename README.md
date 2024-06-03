@@ -46,4 +46,16 @@ Check out the live demo of Mobile Mania [here](https://mobile-mania-client-shadm
 
    ```bash
    git clone https://github.com/Shadman-Shakib-27/Mobile-Mania-Client-Shadman.git
+   
    cd Mobile-Mania-Client-Shadman
+
+2. **Install dependencies::**
+
+   ```bash
+  npm run dev
+  
+
+3. **Run the development server:**
+
+   ```bash
+  npm install
