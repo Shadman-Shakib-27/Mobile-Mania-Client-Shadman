@@ -50,7 +50,7 @@ Check out the live demo of Mobile Mania [Live Site](https://mobile-mania-client-
 2. **Install dependencies::**
 
    ```bash
-      npm install
+   npm install
 
 
 3. **Run the development server:**
