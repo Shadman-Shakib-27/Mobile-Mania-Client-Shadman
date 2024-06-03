@@ -1,8 +1,6 @@
-# Mobile Mania
+# Mobile Mania Client By Shaman 
 
 Mobile Mania is a comprehensive online store for mobile devices, offering a wide range of the latest smartphones from top brands like Apple, Samsung, Xiaomi, and Realme. The site features exclusive flash sales and trending products at discounted prices, making cutting-edge technology accessible to all. With a focus on exceptional service, Mobile Mania aims to enhance your mobile experience, catering to both tech enthusiasts and casual users alike.
-
-![Mobile Mania Screenshot](https://your-image-link/Mobile_Mania.png)
 
 ## Table of Contents
 
