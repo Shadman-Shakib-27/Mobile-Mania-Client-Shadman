@@ -51,11 +51,11 @@ Check out the live demo of Mobile Mania [here](https://mobile-mania-client-shadm
 
 2. **Install dependencies::**
 
-   ```bash
-  npm run dev
+   ```bash   npm run dev
+
   
 
 3. **Run the development server:**
 
-   ```bash
-  npm install
+   ```bash   npm install
+
