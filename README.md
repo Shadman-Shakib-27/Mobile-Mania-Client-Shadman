@@ -11,9 +11,7 @@ Mobile Mania is a comprehensive online store for mobile devices, offering a wide
 - [Live Demo](#live-demo)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+
 
 ## Features
 
@@ -38,7 +36,7 @@ Mobile Mania is a comprehensive online store for mobile devices, offering a wide
 
 ## Live Demo
 
-Check out the live demo of Mobile Mania [here](https://mobile-mania-client-shadman.vercel.app/).
+Check out the live demo of Mobile Mania [Live Site](https://mobile-mania-client-shadman.vercel.app/).
 
 ## Installation
 
@@ -51,11 +49,13 @@ Check out the live demo of Mobile Mania [here](https://mobile-mania-client-shadm
 
 2. **Install dependencies::**
 
-   ```bash   npm run dev
+   ```bash
+   npm run dev
 
   
 
 3. **Run the development server:**
 
-   ```bash   npm install
+   ```bash
+   npm install
 
