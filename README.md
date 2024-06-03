@@ -8,7 +8,6 @@ Mobile Mania is a comprehensive online store for mobile devices, offering a wide
 - [Tech Stack](#tech-stack)
 - [Live Demo](#live-demo)
 - [Installation](#installation)
-- [Usage](#usage)
 
 
 ## Features
